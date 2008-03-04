@@ -233,7 +233,7 @@
 <!-- You are here -->
     <model>
         <name>Pilot</name>
-        <path>Aircraft/Storch/Models/testpilot.xml</path>
+        <path>Models/Aircraft/testpilot.xml</path>
         <offsets>
             <x-m> 2.525</x-m>
             <y-m> 0.0</y-m>
@@ -249,7 +249,7 @@
             <red>1.0</red>
             <green>0.1</green>
             <blue>0.0</blue>
-            <factor-prop>/systems/electrical/outputs/nav-lights</factor-prop>
+            <factor-prop>/systems/electrical/outputs/nav-lights-norm</factor-prop>
         </emission>
     </animation>
 
@@ -260,7 +260,7 @@
             <red>0.0</red>
             <green>1.0</green>
             <blue>0.2</blue>
-            <factor-prop>/systems/electrical/outputs/nav-lights</factor-prop>
+            <factor-prop>/systems/electrical/outputs/nav-lights-norm</factor-prop>
         </emission>
     </animation>
 
@@ -481,7 +481,7 @@
         <object-name>LndLight</object-name>
         <condition>
             <greater-than>
-                <property>systems/electrical/outputs/landing-light</property>
+                <property>systems/electrical/outputs/landing-light-norm</property>
                 <value>0</value>
             </greater-than>
         </condition>

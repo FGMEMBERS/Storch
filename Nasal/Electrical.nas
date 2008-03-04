@@ -202,15 +202,15 @@ electrical_bus = func() {
         }
 
     if ( props.globals.getNode("/controls/lighting/landing-lights[0]").getBoolValue()){
-    OutPuts.getNode("landing-lights[0]",1).setValue(bus_volts * NORM);
+    OutPuts.getNode("landing-lights-norm[0]",1).setValue(bus_volts * NORM);
         } else {
-    OutPuts.getNode("landing-lights[0]",1).setValue(0.0);
+    OutPuts.getNode("landing-lights-norm[0]",1).setValue(0.0);
         }
 
     if ( props.globals.getNode("/controls/lighting/landing-lights[1]").getBoolValue()){
-    OutPuts.getNode("landing-lights[1]",1).setValue(bus_volts * NORM);
+    OutPuts.getNode("landing-lights-norm[1]",1).setValue(bus_volts * NORM);
         } else {
-    OutPuts.getNode("landing-lights[1]",1).setValue(0.0);
+    OutPuts.getNode("landing-lights-norm[1]",1).setValue(0.0);
         }
         
     if ( props.globals.getNode("/controls/lighting/cabin-lights").getBoolValue()){
@@ -220,15 +220,15 @@ electrical_bus = func() {
         }
 
     if ( props.globals.getNode("/controls/lighting/wing-lights").getBoolValue()){
-    OutPuts.getNode("wing-lights",1).setValue(bus_volts * NORM);
+    OutPuts.getNode("wing-lights-norm",1).setValue(bus_volts * NORM);
         } else {
-    OutPuts.getNode("wing-lights",1).setValue(0.0);
+    OutPuts.getNode("wing-lights-norm",1).setValue(0.0);
         }
 
         if ( props.globals.getNode("/controls/lighting/nav-lights").getBoolValue()){
-    OutPuts.getNode("nav-lights",1).setValue(bus_volts * NORM);
+    OutPuts.getNode("nav-lights-norm",1).setValue(bus_volts * NORM);
         } else {
-    OutPuts.getNode("nav-lights",1).setValue(0.0);
+    OutPuts.getNode("nav-lights-norm",1).setValue(0.0);
         }
 
     if ( props.globals.getNode("/controls/lighting/beacon").getBoolValue()){
@@ -255,9 +255,9 @@ avionics_bus = func() {
     var INSTR = props.globals.getNode("/intrumentation");
 
     if ( props.globals.getNode("/controls/lighting/instrument-lights").getBoolValue()){
-        OutPuts.getNode("instrument-lights",1).setValue((bus_volts * NORM) *DIMMER.getValue() );
+        OutPuts.getNode("instrument-lights-norm",1).setValue((bus_volts * NORM) *DIMMER.getValue() );
         } else {
-        OutPuts.getNode("instrument-lights",1).setValue(0.0);
+        OutPuts.getNode("instrument-lights-norm",1).setValue(0.0);
         }
         OutPuts.getNode("adf",1).setValue(bus_volts);
         OutPuts.getNode("dme",1).setValue(bus_volts);
