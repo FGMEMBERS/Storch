@@ -5,6 +5,18 @@
 <path>switch-panel.ac</path>
 
     <animation>
+        <type>material</type>
+        <object-name>LED</object-name>
+        <emission>
+            <red>0.9</red>
+            <green>0.0</green>
+            <blue>0.0</blue>
+            <factor-prop>controls/FIXME</factor-prop>
+        </emission>
+    </animation>
+
+
+    <animation>
         <type>rotate</type>
         <object-name>BattToggle</object-name>
         <property>controls/electric/battery-switch</property>
@@ -206,5 +218,6 @@
            </binding>
         </action>
     </animation>
+
 
 </PropertyList>
