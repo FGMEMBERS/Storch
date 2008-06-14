@@ -38,7 +38,7 @@
   <metrics>
     <wingarea unit="FT2">  280.00 </wingarea>
     <wingspan unit="FT">   46.50 </wingspan>
-    <wing_incidence>          2.00 </wing_incidence>
+    <wing_incidence>          0.001 </wing_incidence>
     <chord unit="FT">    6.02 </chord>
     <htailarea unit="FT2">   44.80 </htailarea>
     <htailarm unit="FT">   16.90 </htailarm>
@@ -73,19 +73,43 @@
       <y>   0.00 </y>
       <z>   0.00 </z>
     </location>
+   <pointmass name="Pilot">
+        <weight unit="LBS"> 170 </weight>
+        <location unit="IN">
+            <x> 98 </x>
+            <y>  0 </y>
+            <z> 1.5 </z>
+        </location>
+    </pointmass>
+    <pointmass name="Passenger1">
+        <weight unit="LBS"> 170 </weight>
+        <location unit="IN">
+            <x>122.0 </x>
+            <y>  0.0 </y>
+            <z>  1.5 </z>
+        </location>
+    </pointmass>
+    <pointmass name="Passenger2">
+        <weight unit="LBS"> 0 </weight>
+        <location unit="IN">
+            <x>148.0 </x>
+            <y>  0.00 </y>
+            <z>  1.5 </z>
+        </location>
+    </pointmass>
   </mass_balance>
   <ground_reactions>
     <contact type="BOGEY" name="LEFT_MAIN">
       <location unit="IN">
         <x>  73.35 </x>
         <y> -60.22 </y>
-        <z> -60.00 </z>
+        <z> -83.975 </z>
       </location>
       <static_friction>  0.80 </static_friction>
       <dynamic_friction> 0.50 </dynamic_friction>
       <rolling_friction> 0.02 </rolling_friction>
-      <spring_coeff unit="LBS/FT">       5400.00 </spring_coeff>
-      <damping_coeff unit="LBS/FT/SEC">   800.00 </damping_coeff>
+      <spring_coeff unit="LBS/FT">       1000.00 </spring_coeff>
+      <damping_coeff unit="LBS/FT/SEC">   100.00 </damping_coeff>
       <max_steer unit="DEG">0</max_steer>
       <brake_group>LEFT</brake_group>
       <retractable>FIXED</retractable>
@@ -94,13 +118,13 @@
       <location unit="IN">
         <x>  73.35 </x>
         <y>  60.22 </y>
-        <z> -60.00 </z>
+        <z> -83.975 </z>
       </location>
       <static_friction>  0.80 </static_friction>
       <dynamic_friction> 0.50 </dynamic_friction>
       <rolling_friction> 0.02 </rolling_friction>
-      <spring_coeff unit="LBS/FT">       5400.00 </spring_coeff>
-      <damping_coeff unit="LBS/FT/SEC">   800.00 </damping_coeff>
+      <spring_coeff unit="LBS/FT">       1000.00 </spring_coeff>
+      <damping_coeff unit="LBS/FT/SEC">   100.00 </damping_coeff>
       <max_steer unit="DEG">0</max_steer>
       <brake_group>RIGHT</brake_group>
       <retractable>FIXED</retractable>
@@ -109,13 +133,13 @@
       <location unit="IN">
         <x> 316.90 </x>
         <y>   0.00 </y>
-        <z> -11.94 </z>
+        <z> -18.898 </z>
       </location>
       <static_friction>  0.80 </static_friction>
       <dynamic_friction> 0.50 </dynamic_friction>
       <rolling_friction> 0.02 </rolling_friction>
-      <spring_coeff unit="LBS/FT">       1800.00 </spring_coeff>
-      <damping_coeff unit="LBS/FT/SEC">   500.00 </damping_coeff>
+      <spring_coeff unit="LBS/FT">       1000.00 </spring_coeff>
+      <damping_coeff unit="LBS/FT/SEC">   100.00 </damping_coeff>
       <max_steer unit="DEG"> -30.00 </max_steer>
       <brake_group>NONE</brake_group>
       <retractable>FIXED</retractable>
@@ -168,8 +192,8 @@
       </orient>
       <feed>0</feed>
       <feed>1</feed>
-      <!--thruster file="Fi-156_prop"-->
-      <thruster file="prop_generic2f">
+      <thruster file="Fi-156_prop2">
+      <!-- thruster file="prop_generic2f" -->
         <location unit="IN">
           <x>   6.00 </x>
           <y>   0.00 </y>
