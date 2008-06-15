@@ -133,7 +133,7 @@
 
     <model>
         <name>Manifold Pressure</name>
-        <path>Aircraft/Storch/Instruments/man-gauge.xml</path>
+        <path>Aircraft/Storch/Instruments/manifold-press.xml</path>
         <offsets>
             <x-m> 1.836</x-m>
             <y-m> 0.233</y-m>
@@ -713,14 +713,14 @@
     <animation>
         <type>rotate</type>
         <object-name>Lwheel</object-name>
-        <object-name>Lstrut</object-name>
-  <property>gear/gear/compression-norm</property>
+        <object-name>Lfork</object-name>
+        <property>gear/gear/compression-norm</property>
         <interpolation>
-            <entry><ind> 0.0   </ind><dep> 0</dep></entry>
-            <entry><ind> 0.4274</ind><dep>10</dep></entry>
-            <entry><ind> 0.7209</ind><dep>20</dep></entry>
-            <entry><ind> 0.935 </ind><dep>30</dep></entry>
-            <entry><ind> 1.0   </ind><dep>40</dep></entry>
+            <entry><ind> 0.0 </ind><dep> 0</dep></entry>
+            <entry><ind> 1.0 </ind><dep>12.5</dep></entry>
+            <entry><ind> 2.0 </ind><dep>23</dep></entry>
+            <entry><ind> 3.0 </ind><dep>33</dep></entry>
+            <entry><ind> 4.0 </ind><dep>42.5</dep></entry>
         </interpolation>
         <center>
             <x-m>-0.834</x-m>
@@ -733,18 +733,40 @@
             <z>0</z>
         </axis>
     </animation>
-
+    <animation>
+        <type>rotate</type>
+        <object-name>Lstrut</object-name>
+        <property>gear/gear/compression-norm</property>
+        <interpolation>
+            <entry><ind> 0.0 </ind><dep> 0</dep></entry>
+            <entry><ind> 1.0 </ind><dep>12.5</dep></entry>
+            <entry><ind> 2.0 </ind><dep>24.5</dep></entry>
+            <entry><ind> 3.0 </ind><dep>39</dep></entry>
+            <entry><ind> 4.0 </ind><dep>55.5</dep></entry>
+        </interpolation>
+        <center>
+            <x-m>2.06493</x-m>
+            <y-m>-0.928454</y-m>
+            <z-m>-0.238179</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
     <animation>
         <type>rotate</type>
         <object-name>Rwheel</object-name>
-        <object-name>Rstrut</object-name>
-  <property>gear/gear[1]/compression-norm</property>
+        <object-name>Rfork</object-name>
+        <object-name>Rstrut.lower</object-name>
+        <property>gear/gear[1]/compression-norm</property>
         <interpolation>
-            <entry><ind> 0.0   </ind><dep> 0</dep></entry>
-            <entry><ind> 0.4274</ind><dep>10</dep></entry>
-            <entry><ind> 0.7209</ind><dep>20</dep></entry>
-            <entry><ind> 0.935 </ind><dep>30</dep></entry>
-            <entry><ind> 1.0   </ind><dep>40</dep></entry>
+            <entry><ind> 0.0 </ind><dep> 0</dep></entry>
+            <entry><ind> 1.0 </ind><dep>12.5</dep></entry>
+            <entry><ind> 2.0 </ind><dep>23</dep></entry>
+            <entry><ind> 3.0 </ind><dep>33</dep></entry>
+            <entry><ind> 4.0 </ind><dep>42.5</dep></entry>
         </interpolation>
         <center>
             <x-m>-0.834</x-m>
@@ -759,11 +781,36 @@
     </animation>
 
     <animation>
+        <type>rotate</type>
+        <object-name>Rstrut.upper</object-name>
+        <property>gear/gear[1]/compression-norm</property>
+        <interpolation>
+            <entry><ind> 0.0 </ind><dep> 0</dep></entry>
+            <entry><ind> 1.0 </ind><dep>12.5</dep></entry>
+            <entry><ind> 2.0 </ind><dep>24.5</dep></entry>
+            <entry><ind> 3.0 </ind><dep>39</dep></entry>
+            <entry><ind> 4.0 </ind><dep>55.5</dep></entry>
+        </interpolation>
+        <center>
+            <x-m>2.06493</x-m>
+            <y-m>0.928454</y-m>
+            <z-m>-0.238179</z-m>
+        </center>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+
+
+    <animation>
         <type>translate</type>
         <object-name>Rearwheel.strut</object-name>
         <object-name>Rearwheel</object-name>
         <property>gear/gear[2]/compression-norm</property>
-        <factor>1.0</factor>
+        <factor>0.3048</factor>
         <axis>
             <x>0.217</x>
             <y>0</y>
