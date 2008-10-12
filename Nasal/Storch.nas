@@ -16,14 +16,14 @@ setlistener("/sim/signals/fdm-initialized", func {
 #    update();
 });
 
-setlistener("/sim/signals/reinit", func {
-    if(cmdarg().getValue()==0){
+setlistener("/sim/signals/reinit", func(n) {
+    if(n.getValue()==0){
     setup_start();
     }
 });
 
-setlistener("controls/fuel/switch-position", func {
-    var position=cmdarg().getValue();
+setlistener("controls/fuel/switch-position", func(n) {
+    var position=n.getValue();
     setprop("consumables/fuel/tank[0]/selected",0);
     setprop("consumables/fuel/tank[1]/selected",0);
     if(position == 1 or position == 2){
@@ -34,16 +34,16 @@ setlistener("controls/fuel/switch-position", func {
     };
 },1);
 
-setlistener("controls/electric/circuitbreaker/cb_0_1", func {
-    if (cmdarg().getBoolValue()) {
+setlistener("controls/electric/circuitbreaker/cb_0_1", func(n) {
+    if (n.getBoolValue()) {
 	    setprop("instrumentation/marker-beacon/power-btn",0);
     } else {
 	    setprop("instrumentation/marker-beacon/power-btn",1);
     }
 });
 
-setlistener("controls/electric/circuitbreaker/cb_0_6", func {
-    if (cmdarg().getBoolValue()) {
+setlistener("controls/electric/circuitbreaker/cb_0_6", func(n) {
+    if (n.getBoolValue()) {
 	    setprop("/sim/view/dynamic/enabled",0);
     } else {
 	    setprop("/sim/view/dynamic/enabled",1);

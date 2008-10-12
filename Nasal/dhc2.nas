@@ -39,14 +39,14 @@ setlistener("/sim/signals/fdm-initialized", func {
     update();
 });
 
-setlistener("/sim/signals/reinit", func {
-    if(cmdarg().getValue()==0){
+setlistener("/sim/signals/reinit", func(n) {
+    if(n.getValue()==0){
     setup_start();
     }
 });
 
-setlistener("/sim/current-view/view-number", func {
-    ViewNum = cmdarg().getValue();
+setlistener("/sim/current-view/view-number", func(n) {
+    ViewNum = n.getValue();
     if(ViewNum == 0){
         Cvolume.setValue(0.6);
         Ovolume.setValue(0.3);
@@ -56,8 +56,8 @@ setlistener("/sim/current-view/view-number", func {
     }
 },1);
 
-setlistener("/controls/fuel/switch-position", func {
-    position=cmdarg().getValue();
+setlistener("/controls/fuel/switch-position", func(n) {
+    position=n.getValue();
     setprop("/consumables/fuel/tank[0]/selected",0);
     setprop("/consumables/fuel/tank[1]/selected",0);
     setprop("/consumables/fuel/tank[2]/selected",0);
@@ -66,8 +66,8 @@ setlistener("/controls/fuel/switch-position", func {
     };
 },1);
 
-setlistener("sim/crashed", func {
-    if (cmdarg().getBoolValue()) {
+setlistener("sim/crashed", func(n) {
+    if (n.getBoolValue()) {
     crash(CRASHED = 1);
     }
 });
