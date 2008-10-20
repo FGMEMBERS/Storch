@@ -516,8 +516,14 @@
         <product>
           <property>aero/qbar-psf</property>
           <property>metrics/Sw-sqft</property>
-          <property>fcs/elevator-pos-norm</property>
-          <value>0.04</value>
+          <table>
+            <independentVar lookup="row">fcs/elevator-pos-norm</independentVar>
+            <tableData>
+              -1.0   0.040
+               0.0   0.000
+               1.0   0.040
+            </tableData>
+          </table>
         </product>
       </function>
     </axis>

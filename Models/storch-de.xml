@@ -3,26 +3,6 @@
 <PropertyList>
 
 <path>storch.ac</path>
-<!--
-    <panel>
-        <path>Aircraft/Storch/Panel/dhc2-panel.xml</path>
-        <bottom-left>
-            <x-m>-0.504</x-m>
-            <y-m>-0.309</y-m>
-            <z-m>0.226</z-m>
-        </bottom-left>
-        <bottom-right>
-            <x-m>-0.504</x-m>
-            <y-m>0.889</y-m>
-            <z-m>-0.174</z-m>
-        </bottom-right>
-        <top-left>
-            <x-m>-0.553</x-m>
-            <y-m>-0.309</y-m>
-            <z-m>0.712</z-m>
-        </top-left>
-    </panel>
--->
      <model>
         <name>Left Fuel Gauge</name>
         <path>Aircraft/Storch/Instruments/fuel-gauge.xml</path>
@@ -43,11 +23,12 @@
         </offsets>
     </model>
 
+<!-- Panel -->
      <model>
         <name>Airspeed</name>
-        <path>Aircraft/Storch/Instruments/asi.xml</path>
+        <path>Aircraft/Storch/Instruments-de/asi-ger.xml</path>
         <offsets>
-            <x-m> 1.797</x-m>
+            <x-m> 1.801</x-m>
             <y-m>-0.115</y-m>
             <z-m>0.256</z-m>
             <pitch-deg>-14</pitch-deg>
@@ -55,8 +36,8 @@
     </model>
 
    <model>
-        <name>Atitude Indicator</name>
-        <path>Aircraft/Storch/Instruments/ai-gauge.xml</path>
+        <name>Turn Gauge</name>
+        <path>Aircraft/Storch/Instruments-de/turn-ger.xml</path>
         <offsets>
             <x-m> 1.801</x-m>
             <y-m>-0.000</y-m>
@@ -66,8 +47,8 @@
     </model>
 
     <model>
-        <name>Altimeter</name>
-        <path>Aircraft/Storch/Instruments/altimeter.xml</path>
+        <name>Vertical Speed</name>
+        <path>Aircraft/Storch/Instruments-de/vario-ger.xml</path>
         <offsets>
             <x-m> 1.801</x-m>
             <y-m> 0.115</y-m>
@@ -77,8 +58,8 @@
     </model>
 
     <model>
-        <name>Turn Gauge</name>
-        <path>Aircraft/Storch/Instruments/turn-gauge.xml</path>
+        <name>Altimeter</name>
+        <path>Aircraft/Storch/Instruments-de/alt-ger.xml</path>
         <offsets>
             <x-m> 1.821</x-m>
             <y-m>-0.115</y-m>
@@ -88,8 +69,8 @@
     </model>
 
     <model>
-        <name>Heading Gauge</name>
-        <path>Aircraft/Storch/Instruments/hdg-gauge.xml</path>
+        <name>CLOCK</name>
+        <path>Aircraft/Storch/Instruments-de/clock.xml</path>
         <offsets>
             <x-m> 1.826</x-m>
             <y-m>-0.00</y-m>
@@ -99,93 +80,48 @@
     </model>
 
     <model>
-        <name>Vertical Speed</name>
-        <path>Aircraft/Storch/Instruments/vsi-gauge.xml</path>
+        <name>RPM</name>
+        <path>Aircraft/Storch/Instruments-de/tach-ger.xml</path>
         <offsets>
-            <x-m> 1.826</x-m>
+            <x-m> 1.821</x-m>
             <y-m>0.115</y-m>
             <z-m>0.160</z-m>
             <pitch-deg>-14</pitch-deg>
         </offsets>
     </model>
 
-    <model>
-        <name>RPM</name>
-        <path>Aircraft/Storch/Instruments/rpm-gauge.xml</path>
-        <offsets>
-            <x-m> 1.790</x-m>
-            <y-m> 0.233</y-m>
-            <z-m> 0.227</z-m>
-            <pitch-deg>-14</pitch-deg>
-        </offsets>
-    </model>
-
-    <model>
-        <name>OILTEMP</name>
-         <path>Aircraft/Storch/Instruments/oiltemp-gauge.xml</path>
-         <offsets>
-            <x-m> 1.815</x-m>
-            <y-m> 0.233</y-m>
-            <z-m> 0.142</z-m>
-            <pitch-deg>-14</pitch-deg>
-        </offsets>
-    </model>
-
-    <model>
-        <name>Manifold Pressure</name>
-        <path>Aircraft/Storch/Instruments/manifold-press.xml</path>
-        <offsets>
-            <x-m> 1.836</x-m>
-            <y-m> 0.233</y-m>
-            <z-m> 0.059</z-m>
-            <pitch-deg>-14</pitch-deg>
-        </offsets>
-    </model>
-
-    <model>
-        <name>CLOCK</name>
-        <path>Aircraft/Storch/Instruments/clock2.xml</path>
-        <offsets>
-           <x-m> 1.837</x-m>
-           <y-m>-0.233</y-m>
-           <z-m> 0.227</z-m>
+   <model>
+       <name>Oil Temp</name>
+       <path>Aircraft/Storch/Instruments-de/oiltemp.xml</path>
+       <offsets>
+           <x-m> 1.840</x-m>
+           <y-m>-0.042</y-m>
+           <z-m> 0.067</z-m>
            <pitch-deg>-14</pitch-deg>
        </offsets>
    </model>
 
    <model>
-       <name>AMMETER</name>
-       <path>Aircraft/Storch/Instruments/ammeter.xml</path>
+       <name>oil pressure</name>
+       <path>Aircraft/Storch/Instruments-de/engine-ger.xml</path>
        <offsets>
-           <x-m> 1.837</x-m>
-           <y-m>-0.233</y-m>
-           <z-m> 0.142</z-m>
+           <x-m> 1.840</x-m>
+           <y-m> 0.042</y-m>
+           <z-m> 0.067</z-m>
            <pitch-deg>-14</pitch-deg>
        </offsets>
    </model>
-
-   <model>
-       <name>CARBTEMP</name>
-       <path>Aircraft/Storch/Instruments/carbtemp.xml</path>
-       <offsets>
-           <x-m> 1.836</x-m>
-           <y-m> 0.063</y-m>
-           <z-m> 0.077</z-m>
-           <pitch-deg>-14</pitch-deg>
-       </offsets>
-   </model>
-
-   <model>
-       <name>Vacuum Gauge</name>
-       <path>Aircraft/Storch/Instruments/vacuum.xml</path>
-       <offsets>
-            <x-m> 1.837</x-m>
-            <y-m>-0.233</y-m>
-            <z-m> 0.059</z-m>
+<!-- Other Controls -->
+    <model>
+        <name>Magneto switch</name>
+        <path>Aircraft/Storch/Instruments-de/ignition-ger.xml</path>
+        <offsets>
+            <x-m> 1.854</x-m>
+            <y-m>-0.230</y-m>
+            <z-m> 0.077</z-m>
             <pitch-deg>-14</pitch-deg>
         </offsets>
     </model>
-
 
     <model>
         <name>Fuel Select</name>
@@ -194,17 +130,6 @@
             <x-m> 1.86</x-m>
             <y-m>-0.000</y-m>
             <z-m>-0.08</z-m>
-            <pitch-deg>0</pitch-deg>
-        </offsets>
-    </model>
-
-    <model>
-        <name>Magneto switch</name>
-        <path>Aircraft/Storch/Instruments/magnetos.xml</path>
-        <offsets>
-            <x-m> 1.854</x-m>
-            <y-m> 0.230</y-m>
-            <z-m>-0.020</z-m>
             <pitch-deg>0</pitch-deg>
         </offsets>
     </model>

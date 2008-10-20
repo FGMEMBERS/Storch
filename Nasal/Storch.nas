@@ -13,7 +13,7 @@ setlistener("/sim/signals/fdm-initialized", func {
     setprop("consumables/fuel/tank[1]/selected",1);
     setup_start();
     FDM=1;
-#    update();
+    update();
 });
 
 setlistener("/sim/signals/reinit", func(n) {
@@ -50,14 +50,60 @@ setlistener("controls/electric/circuitbreaker/cb_0_6", func(n) {
     }
 });
 
+   
+# ==============
+# 8 Day Clock
+# ==============
 
+var clockTime=0;
 
-var oil_temp = func{
-    if(getprop("engines/engine/running") != 0){
-        interpolate("engines/engine/oil-temp-norm", 0.7 + (getprop("/controls/engines/engine/throttle")* 0.3), 300);
-    }else{
-        interpolate("engines/engine/oil-temp-norm", 0.0, 1000);
+clockResetexport = func{
+    var running=getprop("instrumentation/clock/stopwatch-running");
+    var time=getprop("instrumentation/clock/stopwatch-seconds");
+# print("clockReset Called: time=", time, " Running=", running);
+# running -> stop    
+    if(running == 1){
+# print("clockReset: stop!");
+        setprop("instrumentation/clock/stopwatch-running", 0);
     }
+    if(running == 0)
+    {
+# print("clockReset:running is false!");
+# !running & seconds -> reset
+        if(time > 0)
+        {
+# print("clockReset: reset!");
+            setprop("instrumentation/clock/stopwatch-seconds", 0);
+            clockTime=0;
+        }
+# !running & !seconds ->start
+        if(time == 0)
+        {
+# print("clockReset: start!");
+            setprop("instrumentation/clock/stopwatch-running", 1);
+            clockTime=getprop("/sim/time/utc/day-seconds");
+
+        }
+    }
+}
+
+clockUpdate = func
+{
+    var running=getprop("instrumentation/clock/stopwatch-running");
+    if(running){
+        var time=getprop("/sim/time/utc/day-seconds");
+        setprop("instrumentation/clock/stopwatch-seconds", time-clockTime);
+    }
+} 
+
+# ==============
+# Fuel System
+# ==============
+
+var fuelPressure = func{
+    var rpm=getprop("engines/engine/rpm");
+    rpm = rpm > 300 ? 1 : rpm/300;
+    interpolate("engines/engine/fuel-pressure-psi", 30.0*rpm, 1);
 }
 
 
@@ -67,7 +113,8 @@ setup_start = func{
 
 
 update = func {
-    oil_temp();
+    fuelPressure();
+    clockUpdate();
     settimer(update,0);
 }
 

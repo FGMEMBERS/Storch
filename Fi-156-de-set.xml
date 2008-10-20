@@ -9,7 +9,7 @@ July 2007 Ron Jensen
 <PropertyList>
 <sim>
 
-    <description>Fi-156 Storch</description>
+    <description>Fi-156 Storch with German Instruments</description>
     <author>Ron Jensen</author>
     <flight-model>jsb</flight-model>
     <aero>Fi-156</aero>
@@ -24,7 +24,7 @@ July 2007 Ron Jensen
     </sound>
 
     <model>
-        <path>Aircraft/Storch/Models/storch.xml</path>
+        <path>Aircraft/Storch/Models/storch-de.xml</path>
     </model>
 
     <virtual-cockpit archive="y">true</virtual-cockpit>
@@ -125,14 +125,6 @@ July 2007 Ron Jensen
         <instruments-norm>1.0</instruments-norm>
     </lighting>
 </controls>
- <instrumentation>
-  <clock>
-   <bezel-rotation-min type="int">0</bezel-rotation-min>
-   <stopwatch-running type="bool">false</stopwatch-running>
-   <stopwatch-seconds type="int">0</stopwatch-seconds>
-  </clock>
- </instrumentation>
-
 
 <input>
     <keyboard>
@@ -230,6 +222,13 @@ July 2007 Ron Jensen
 
     </keyboard>
 </input>
+ <instrumentation>
+  <clock>
+   <bezel-rotation-min type="int">0</bezel-rotation-min>
+   <stopwatch-running type="bool">false</stopwatch-running>
+   <stopwatch-seconds type="int">0</stopwatch-seconds>
+  </clock>
+ </instrumentation>
 
 <limits>
    <max-flap-extension-speed>
