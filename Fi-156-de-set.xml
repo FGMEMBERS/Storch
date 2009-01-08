@@ -24,7 +24,10 @@ July 2007 Ron Jensen
     </sound>
 
     <model>
-        <path>Aircraft/Storch/Models/storch-de.xml</path>
+      <path>Aircraft/Storch/Models/storch-de.xml</path>
+      <livery>
+        <file type="string"/>
+      </livery>
     </model>
 
     <virtual-cockpit archive="y">true</virtual-cockpit>
@@ -95,7 +98,28 @@ July 2007 Ron Jensen
         <line>5:Once engine is running,</line>
         <line>  engage alternator switch</line>
     </help>
-
+    <flaps>
+      <setting>0.00</setting>
+      <setting>0.375</setting>
+      <setting>0.50</setting>
+      <setting>0.70</setting>
+      <setting>1.00</setting>
+    </flaps> 
+    <menubar>
+     <default>
+      <menu n="100">
+       <label>Fi-156</label>
+       <enabled type="bool">true</enabled>
+       <item>
+        <label>Select Livery</label>
+        <binding>
+         <command>nasal</command>
+         <script>aircraft.livery.dialog.open()</script>
+        </binding>
+       </item>
+      </menu>
+     </default>
+    </menubar>
 </sim>
 
 <engines>

@@ -23,6 +23,16 @@
         </top-left>
     </panel>
 -->
+  <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/Storch/Models/Liveries");
+    </load>
+
+    <unload>
+      livery_update.stop();
+    </unload>
+  </nasal>
+
      <model>
         <name>Left Fuel Gauge</name>
         <path>Aircraft/Storch/Instruments/fuel-gauge.xml</path>
@@ -817,5 +827,25 @@
             <z>0.976</z>
         </axis>
     </animation>
+
+  <animation>
+    <type>material</type>
+      <object-name>wing</object-name>
+      <object-name>wing.001</object-name>
+      <object-name>slat</object-name>
+      <object-name>slat.001</object-name>
+      <object-name>LHflap</object-name>
+      <object-name>RHflap</object-name>
+      <object-name>LHaileron</object-name>
+      <object-name>RHaileron</object-name>
+      <object-name>fuselage</object-name>
+      <object-name>Antenna</object-name>
+      <object-name>Rudder</object-name>
+      <object-name>h-stab</object-name>
+      <object-name>Elevator</object-name>
+      <property-base>sim/model/livery</property-base>
+      <texture-prop>texture</texture-prop>
+      <texture>storch.rgb</texture>
+  </animation>
 
 </PropertyList>

@@ -7,6 +7,8 @@ aircraft.light.new("controls/lighting/strobe-state", [0.05, 1.30], strobe_switch
 var beacon_switch = props.globals.getNode("controls/lighting/beacon", 1);
 aircraft.light.new("controls/lighting/beacon-state", [1.0, 1.0], beacon_switch);
 
+aircraft.livery.init("Aircraft/Storch/Models/Liveries");
+
 setlistener("/sim/signals/fdm-initialized", func {
     F_Switch.setIntValue(-1);
     setprop("consumables/fuel/tank[0]/selected",1);
