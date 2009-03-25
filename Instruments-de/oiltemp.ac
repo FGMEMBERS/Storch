@@ -1,8 +1,8 @@
 AC3Db
-MATERIAL "ac3dmat1" rgb 1 1 1  amb 0.2 0.2 0.2  emis 0 0 0  spec 0.5 0.5 0.5  shi 10  trans 0
-MATERIAL "case.001" rgb 0.15 0.15 0.15  amb 0.705217 0.705217 0.705217  emis 0 0 0  spec 0.6 0.6 0.6  shi 78  trans 0
-MATERIAL "case.002" rgb 0.1 0.1 0.1  amb 0.5 0.5 0.5  emis 0 0 0  spec 0.4 0.4 0.4  shi 78  trans 0
-MATERIAL "brown" rgb 0.4 0.25 0.1  amb 0.5 0.5 0.5  emis 0 0 0  spec 0.575314 0.462881 0.262792  shi 78  trans 0
+MATERIAL "ac3dmat1" rgb 1 1 1  amb 0.8 0.8 0.8  emis 0 0 0  spec 0.5 0.5 0.5  shi 10  trans 0
+MATERIAL "case.001" rgb 0.15 0.15 0.15  amb 0.15 0.15 0.15  emis 0 0 0  spec 0.6 0.6 0.6  shi 78  trans 0
+MATERIAL "case.002" rgb 0.1 0.1 0.1  amb 0.1 0.1 0.1  emis 0 0 0  spec 0.4 0.4 0.4  shi 78  trans 0
+MATERIAL "brown" rgb 0.4 0.25 0.1  amb 0.4 0.25 0.1  emis 0 0 0  spec 0.575314 0.462881 0.262792  shi 78  trans 0
 OBJECT world
 kids 5
 OBJECT poly

@@ -1,19 +1,19 @@
 AC3Db
-MATERIAL "underbellyblue" rgb 1 1 1  amb 0.1 0.1 0.1  emis 0 0 0  spec 0 0 0  shi 10  trans 0
-MATERIAL "ac3dmat8" rgb 0.627451 0.752941 0.878431  amb 0.1 0.1 0.1  emis 0 0 0  spec 0 0 0  shi 10  trans 0
-MATERIAL "ac3dmat13" rgb 0.533333 0.533333 0.533333  amb 0.1 0.1 0.1  emis 0 0 0  spec 0 0 0  shi 10  trans 0
-MATERIAL "exhaust" rgb 0.467 0.388 0.388  amb 0.1 0.1 0.1  emis 0 0 0  spec 0 0 0  shi 25  trans 0
-MATERIAL "ac3dmat13" rgb 0.533333 0.533333 0.533333  amb 0.2 0.2 0.2  emis 0 0 0  spec 0.5 0.5 0.5  shi 10  trans 0
-MATERIAL "ac3dmat11" rgb 0.651 0.373 0.133  amb 0.2 0.2 0.2  emis 0 0 0  spec 0.502 0.502 0.502  shi 10  trans 0
+MATERIAL "underbellyblue" rgb 1 1 1  amb 0.8 0.8 0.8  emis 0 0 0  spec 0 0 0  shi 10  trans 0
+MATERIAL "ac3dmat8" rgb 0.627451 0.752941 0.878431  amb 0.6 0.7 0.8  emis 0 0 0  spec 0 0 0  shi 10  trans 0
+MATERIAL "ac3dmat13" rgb 0.533333 0.533333 0.533333  amb 0.5 0.5 0.5  emis 0 0 0  spec 0 0 0  shi 10  trans 0
+MATERIAL "exhaust" rgb 0.467 0.388 0.388  amb 0.4 0.4 0.4  emis 0 0 0  spec 0 0 0  shi 25  trans 0
+MATERIAL "ac3dmat13" rgb 0.533333 0.533333 0.533333  amb 0.5 0.5 0.5  emis 0 0 0  spec 0.5 0.5 0.5  shi 10  trans 0
+MATERIAL "ac3dmat11" rgb 0.651 0.373 0.133  amb 0.6 0.3 0.1  emis 0 0 0  spec 0.502 0.502 0.502  shi 10  trans 0
 MATERIAL "glass" rgb 0 0 0  amb 0.102 0.102 0.102  emis 0 0 0  spec 1 1 1  shi 46  trans 0.702
-MATERIAL "fuselagegreen" rgb 1 1 1  amb 0.102 0.102 0.102  emis 0 0 0  spec 0.369 0 0  shi 29  trans 0
-MATERIAL "redlight.001" rgb 0.722627 0.045303 0.045303  amb 0.5 0.5 0.5  emis 0 0 0  spec 0.790754 0.790754 0.790754  shi 72  trans 0
-MATERIAL "WhitePaint.002" rgb 0.8 0.8 0.8  amb 0 0 0  emis 0 0 0  spec 1 1 1  shi 32  trans 0
+MATERIAL "fuselagegreen" rgb 1 1 1  amb 0.8 0.8 0.8  emis 0 0 0  spec 0.369 0 0  shi 29  trans 0
+MATERIAL "redlight.001" rgb 0.722627 0.045303 0.045303  amb 0.722627 0.045303 0.045303  emis 0 0 0  spec 0.790754 0.790754 0.790754  shi 72  trans 0
+MATERIAL "WhitePaint.002" rgb 0.8 0.8 0.8  amb 0.8 0.8 0.8  emis 0 0 0  spec 1 1 1  shi 32  trans 0
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
 MATERIAL "Flatblack.001" rgb 0.05 0.05 0.05  amb 0 0 0  emis 0 0 0  spec 0 0 0  shi 0  trans 0
-MATERIAL "prop.001" rgb 0.381359 0.381359 0.381359  amb 0 0 0  emis 0 0 0  spec 0 0 0  shi 72  trans 0.9
+MATERIAL "prop.001" rgb 0.381359 0.381359 0.381359  amb 0.381359 0.381359 0.381359  emis 0 0 0  spec 0 0 0  shi 72  trans 0.9
 MATERIAL "glow" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 1 1 1  shi 128  trans 0
-MATERIAL "greenlight..001" rgb 0.045303 0.722627 0.401268  amb 0.5 0.5 0.5  emis 0 0 0  spec 0.790754 0.790754 0.790754  shi 72  trans 0
+MATERIAL "greenlight..001" rgb 0.045303 0.722627 0.401268  amb 0.045303 0.722627 0.401268  emis 0 0 0  spec 0.790754 0.790754 0.790754  shi 72  trans 0
 OBJECT world
 kids 27
 OBJECT group

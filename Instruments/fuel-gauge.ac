@@ -1,7 +1,7 @@
 AC3Db
-MATERIAL "Gray" rgb 0.8 0.8 0.8  amb 0.1 0.1 0.1  emis 0 0 0  spec 0 0 0  shi 10  trans 0
-MATERIAL "Fuel" rgb 1 0.792 0  amb 0.1 0.1 0.1  emis 0.655 0.169 0  spec 0 0 0  shi 32  trans 0.333
-MATERIAL "steel" rgb 0.8 0.8 0.8  amb 0.1 0.1 0.1  emis 0 0 0  spec 0.875 0.875 0.875  shi 10  trans 0
+MATERIAL "Gray" rgb 0.8 0.8 0.8  amb 0.8 0.8 0.8  emis 0 0 0  spec 0 0 0  shi 10  trans 0
+MATERIAL "Fuel" rgb 1 0.792 0  amb 1 0.792 0  emis 0.655 0.169 0  spec 0 0 0  shi 32  trans 0.333
+MATERIAL "steel" rgb 0.8 0.8 0.8  amb 0.8 0.8 0.8  emis 0 0 0  spec 0.875 0.875 0.875  shi 10  trans 0
 OBJECT world
 kids 4
 OBJECT poly
