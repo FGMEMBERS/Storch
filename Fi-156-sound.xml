@@ -10,8 +10,7 @@
     <property>/engines/engine/cranking</property>
    </condition>
    <volume>
-   <property>/engines/engine/cranking</property>
-    <offset>0.5</offset>
+    <property>/engines/engine/cranking</property>
    </volume>
   </crank>
   
@@ -49,6 +48,8 @@
     <property>/velocities/airspeed-kt</property>
     <type>log</type>
     <factor>0.4</factor>
+    <min>0.0</min>
+    <max>1.0</max>
    </volume>
   </rumble>
 
@@ -117,6 +118,7 @@
    <property>/surface-positions/flap-pos-norm</property>
    <volume>
     <factor>0.75</factor>
+    <max>1.0</max>
    </volume>
   </flap>
 
@@ -163,7 +165,7 @@
 <property>sim/sound/switch</property>
 </condition>
    <volume>
-    <offset>0.7</offset>
+    <offset>0.0</offset>
    </volume>
   </switch>
 
@@ -177,7 +179,7 @@
 </not>
 </condition>
    <volume>
-    <offset>0.7</offset>
+    <offset>0.0</offset>
    </volume>
   </switch>
 

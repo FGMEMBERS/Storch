@@ -1,5 +1,7 @@
 var F_Switch = props.globals.getNode("controls/fuel/switch-position",2);
 var FDM=0;
+var hmHobbs  =  aircraft.timer.new("instrumentation/hobbs-meter/time", 60); 
+var rpmN     = props.globals.getNode("engines/engine[0]/rpm", 1); 
 
 var strobe_switch = props.globals.getNode("controls/lighting/strobe", 1);
 aircraft.light.new("controls/lighting/strobe-state", [0.05, 1.30], strobe_switch);
@@ -112,11 +114,33 @@ var fuelPressure = func{
 setup_start = func{
 
 }
+# ==============
+# Hobbs Meter
+# ==============
 
+calcDigits = func( v, prop, ndigit ) {
+    v = int( v );
+    for( var i = 0; i < ndigit ; i=i+1 ) {
+        v2 = int( v / 10 );
+        r = v - v2 * 10;
+        setprop( prop~i, r );
+        v = v2;
+    }
+}
+
+var calcHoursMeter = func {
+  if( rpmN.getValue() > 100.0 ) {
+    hmHobbs.start();
+  } else {
+    hmHobbs.stop();
+  }
+  calcDigits( int(getprop("instrumentation/hobbs-meter/time") / 360), "instrumentation/hobbs-meter/digits", 5);
+}
 
 update = func {
     fuelPressure();
     clockUpdate();
+    calcHoursMeter();
     settimer(update,0);
 }
 

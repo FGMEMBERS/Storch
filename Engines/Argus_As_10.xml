@@ -36,11 +36,12 @@ Performance
   <minmp unit="INHG">          6.0 </minmp>
   <maxmp unit="INHG">         30.0 </maxmp>
   <displacement unit="IN3"> 773.00 </displacement>
-  <maxhp>        240.00 </maxhp>
+  <maxhp unit="WATTS">      179000 </maxhp>
   <cycles>         4.0 </cycles>
   <idlerpm>      500.0 </idlerpm>
   <maxrpm>      2000.0 </maxrpm>
   <maxthrottle>    1.0 </maxthrottle>
-  <minthrottle>    0.1 </minthrottle>
-  <bsfc>           0.518</bsfc>
+  <minthrottle>    0.2 </minthrottle>
+  <bsfc unit="LBS/HP*HR"> 0.518</bsfc>
+  <volumetric-efficiency> 0.7625 </volumetric-efficiency>
 </piston_engine>
