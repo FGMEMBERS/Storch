@@ -41,7 +41,7 @@ Performance
   <idlerpm>      500.0 </idlerpm>
   <maxrpm>      2000.0 </maxrpm>
   <maxthrottle>    1.0 </maxthrottle>
-  <minthrottle>    0.2 </minthrottle>
+  <minthrottle>    0.05 </minthrottle>
   <bsfc unit="LBS/HP*HR"> 0.518</bsfc>
   <volumetric-efficiency> 0.7625 </volumetric-efficiency>
 </piston_engine>
