@@ -27,8 +27,6 @@ props.globals.initNode("/sim/remote/pilot-callsign", "", "STRING");
 ######################################################################
 # Useful local property paths.
 
-
-
 ######################################################################
 # Slow state properties for replication.
 
@@ -40,9 +38,6 @@ props.globals.initNode("/sim/remote/pilot-callsign", "", "STRING");
 ######################################################################
 # Used by dual_control to set up the mappings for the pilot.
 var pilot_connect_copilot = func (copilot) {
-    # Make sure dual-control is activated in the FDM FCS.
-    settimer(func { setprop(l_dual_control, 1); }, 1);
-
     return 
         [
          ######################################################################
@@ -82,12 +77,33 @@ var copilot_connect_pilot = func (pilot) {
 
 ######################################################################
 var copilot_disconnect_pilot = func {
+    # Reset local sound properties.
+    p = "engines/engine/rpm";
+    props.globals.getNode(p).unalias();
+    props.globals.getNode(p).setValue(0);
+    p = "gear/gear[0]/compression-norm";
+    props.globals.getNode(p).unalias();
+    props.globals.getNode(p).setValue(0);
+    p = "gear/gear[1]/compression-norm";
+    props.globals.getNode(p).unalias();
+    props.globals.getNode(p).setValue(0);
 }
 
 ######################################################################
 # Copilot Nasal wrappers
 
 var set_copilot_wrappers = func (pilot) {
+    # Setup aliases to animate the MP 3d model.
     var p = "instrumentation/magnetic-compass/indicated-heading-deg";
-    pilot.getNode(p).alias(props.globals.getNode(p));
+    pilot.getNode(p,1).alias(props.globals.getNode(p));
+
+    # Setup aliases to drive local sound.
+    p = "engines/engine/rpm";
+    props.globals.getNode(p).alias(pilot.getNode(p));
+    p = "surface-positions/flap-pos-norm";
+    props.globals.getNode(p).alias(pilot.getNode(p));
+    p = "gear/gear[0]/compression-norm";
+    props.globals.getNode(p).alias(pilot.getNode(p));
+    p = "gear/gear[1]/compression-norm";
+    props.globals.getNode(p).alias(pilot.getNode(p));
 }

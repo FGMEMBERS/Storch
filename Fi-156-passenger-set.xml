@@ -78,11 +78,42 @@
    </config>
   </view>
 
+  <view n="1">
+   <config>
+    <at-model type="bool">false</at-model>
+   </config>
+  </view>
+  <view n="2">
+   <config>
+    <at-model type="bool">false</at-model>
+   </config>
+  </view>
+  <view n="3">
+   <config>
+    <at-model type="bool">false</at-model>
+   </config>
+  </view>
+  <view n="4">
+   <config>
+    <at-model type="bool">false</at-model>
+   </config>
+  </view>
+  <view n="5">
+   <config>
+    <at-model type="bool">false</at-model>
+   </config>
+  </view>
+  <view n="6">
+   <config>
+    <at-model type="bool">false</at-model>
+   </config>
+  </view>
+
   <chase-distance-m type="double">-18.0</chase-distance-m>
 
   <sound>
-   <audible>false</audible>
-   <path/>
+   <audible>true</audible>
+   <path>Aircraft/Storch/Fi-156-passenger-sound.xml</path>
   </sound>
 
   <!-- Aircraft specific help. -->
