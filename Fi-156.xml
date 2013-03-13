@@ -112,7 +112,7 @@
       <damping_coeff unit="LBS/FT/SEC">   100.00 </damping_coeff>
       <max_steer unit="DEG">0</max_steer>
       <brake_group>LEFT</brake_group>
-      <retractable>FIXED</retractable>
+      <retractable>0</retractable>
     </contact>
     <contact type="BOGEY" name="RIGHT_MAIN">
       <location unit="IN">
@@ -127,7 +127,7 @@
       <damping_coeff unit="LBS/FT/SEC">   100.00 </damping_coeff>
       <max_steer unit="DEG">0</max_steer>
       <brake_group>RIGHT</brake_group>
-      <retractable>FIXED</retractable>
+      <retractable>0</retractable>
     </contact>
     <contact type="BOGEY" name="TAIL">
       <location unit="IN">
@@ -142,7 +142,7 @@
       <damping_coeff unit="LBS/FT/SEC">   100.00 </damping_coeff>
       <max_steer unit="DEG"> -30.00 </max_steer>
       <brake_group>NONE</brake_group>
-      <retractable>FIXED</retractable>
+      <retractable>0</retractable>
     </contact>
     <contact type="STRUCTURE" name="LEFT_WING">
       <location unit="IN">
