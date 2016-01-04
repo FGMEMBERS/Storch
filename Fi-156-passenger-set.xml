@@ -17,9 +17,10 @@
   <author>Anders Gidenstam</author>
   <status>alpha</status>
   <aircraft-version>$Id$</aircraft-version>
-  
-  <flight-model>null</flight-model>
 
+  <flight-model>null</flight-model>
+  <variant-of>Fi-156</variant-of>
+  
   <presets>
    <onground type="bool">false</onground>
    <altitude-agl-ft type="double">30.0</altitude-agl-ft>
