@@ -20,10 +20,16 @@ July 2007 Ron Jensen
             <path></path>
         </electrical>
     </systems>
+	
     <sound>
         <path>Aircraft/Storch/Fi-156-sound.xml</path>
     </sound>
 
+	<startup>
+		<splash-texture>Aircraft/Storch/Splash/splash1.png</splash-texture>
+		<splash-texture>Aircraft/Storch/Splash/splash2.png</splash-texture>
+	</startup>
+	
     <model>
       <path>Aircraft/Storch/Models/storch-de.xml</path>
       <livery>
