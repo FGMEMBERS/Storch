@@ -456,7 +456,7 @@
         <type>rotate</type>
         <object-name>LHaileron</object-name>
         <property>surface-positions/left-aileron-pos-norm</property>
-        <factor>-15</factor>
+        <factor>15</factor>
         <center>
             <x-m>3.28</x-m>
             <y-m>-5.455</y-m>
@@ -473,7 +473,7 @@
         <type>rotate</type>
         <object-name>RHaileron</object-name>
         <property>surface-positions/right-aileron-pos-norm</property>
-        <factor>15</factor>
+        <factor>-15</factor>
         <center>
             <x-m>3.28</x-m>
             <y-m>5.455</y-m>
@@ -830,10 +830,10 @@
 
   <animation>
     <type>material</type>
-      <object-name>wing</object-name>
-      <object-name>wing.001</object-name>
-      <object-name>slat</object-name>
-      <object-name>slat.001</object-name>
+      <object-name>Lwing</object-name>
+      <object-name>Rwing</object-name>
+      <object-name>Lslat</object-name>
+      <object-name>Rslat</object-name>
       <object-name>LHflap</object-name>
       <object-name>RHflap</object-name>
       <object-name>LHaileron</object-name>
