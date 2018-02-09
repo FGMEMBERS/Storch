@@ -5,7 +5,7 @@
   <model>
    <livery>
     <name type="string">Island Virtual Airways</name>
-    <texture>Liveries/iva.rgb</texture>
+    <texture>Liveries/iva.png</texture>
    </livery>
   </model>
  </sim>

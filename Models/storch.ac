@@ -2553,7 +2553,7 @@ OBJECT poly
 name "Elevator"
 loc 8.5034304 0.4165850 1.1926700
 crease 45.0
-texture "storch.rgb"
+texture "storch.png"
 texrep 1 1
 numvert 116
 -0.1746470 0.0495569 -1.3238500
@@ -3521,7 +3521,7 @@ OBJECT poly
 name "fuselage"
 loc 4.2489901 0.4086380 0.0000449
 crease 45.0
-texture "storch.rgb"
+texture "storch.png"
 texrep 1 1
 numvert 477
 -2.8934500 -0.7809330 -0.3198590
@@ -6746,7 +6746,7 @@ OBJECT poly
 name "gearsupports"
 loc 1.8881000 0.2254840 -0.6546380
 crease 82.0
-texture "storch.rgb"
+texture "storch.png"
 texrep 1 1
 numvert 100
 0.3663450 0.6126730 1.1730200
@@ -7639,7 +7639,7 @@ OBJECT poly
 name "h-stab"
 loc 7.8603301 0.4165850 0.0240507
 crease 45.0
-texture "storch.rgb"
+texture "storch.png"
 texrep 1 1
 numvert 33
 0.1609220 0.0052990 -1.5796000
@@ -7883,7 +7883,7 @@ OBJECT poly
 name "Lfork"
 loc 2.0876200 -0.5782250 -0.0022665
 crease 45.0
-texture "storch.rgb"
+texture "storch.png"
 texrep 1 1
 numvert 52
 -0.4823260 0.0504327 0.0154188
@@ -8184,7 +8184,7 @@ OBJECT poly
 name "Lstrut.lower"
 loc -0.1530550 -1.0567000 0.2634640
 crease 45.0
-texture "storch.rgb"
+texture "storch.png"
 texrep 1 1
 numvert 22
 -0.0542345 -0.3744350 0.0933573
@@ -8405,7 +8405,7 @@ OBJECT poly
 name "Lstrut.upper"
 loc -0.0519233 -0.3584770 0.0893785
 crease 45.0
-texture "storch.rgb"
+texture "storch.png"
 texrep 1 1
 numvert 22
 0.1158840 0.3554210 -0.0644809
@@ -8626,7 +8626,7 @@ OBJECT poly
 name "Ltail-strut"
 loc 8.1693554 1.2147882 -0.0000000
 crease 35.0
-texture "storch.rgb"
+texture "storch.png"
 texrep 1 1
 numvert 16
 0.0045905 0.0058591 0.0293758
@@ -9826,7 +9826,7 @@ OBJECT poly
 name "Lwing-jury-strut-front"
 loc -0.0000002 -0.0000000 -0.0000002
 crease 35.0
-texture "storch.rgb"
+texture "storch.png"
 texrep 1 1
 numvert 8
 -0.2528134 0.5298097 1.9373906
@@ -9871,7 +9871,7 @@ OBJECT poly
 name "Lwing-jury-strut-lower"
 loc 0.0000000 -0.0000001 0.0000000
 crease 35.0
-texture "storch.rgb"
+texture "storch.png"
 texrep 1 1
 numvert 8
 -0.2172524 0.5697239 1.9373903
@@ -9916,7 +9916,7 @@ OBJECT poly
 name "Lwing-jury-strut-mid"
 loc 0.0000000 0.0000000 0.0000000
 crease 35.0
-texture "storch.rgb"
+texture "storch.png"
 texrep 1 1
 numvert 8
 -0.2514014 0.5298096 1.9373903
@@ -9961,7 +9961,7 @@ OBJECT poly
 name "Lwing-jury-strut-rear"
 loc 0.0000000 0.0000000 0.0000000
 crease 35.0
-texture "storch.rgb"
+texture "storch.png"
 texrep 1 1
 numvert 8
 0.0790685 0.5298096 1.9373903
@@ -10006,7 +10006,7 @@ OBJECT poly
 name "Lwing-strut-front"
 loc 0.0000002 0.0000001 0.0000000
 crease 35.0
-texture "storch.rgb"
+texture "storch.png"
 texrep 1 1
 numvert 16
 0.0470367 -0.0000132 0.3869743
@@ -10087,7 +10087,7 @@ OBJECT poly
 name "Lwing-strut-rear"
 loc 0.0000002 0.0000001 0.0000000
 crease 35.0
-texture "storch.rgb"
+texture "storch.png"
 texrep 1 1
 numvert 16
 0.0470367 -0.0000132 0.3869743
@@ -10168,7 +10168,7 @@ OBJECT poly
 name "Rwing-jury-strut-front"
 loc -0.0000002 -0.0000000 -0.0000002
 crease 35.0
-texture "storch.rgb"
+texture "storch.png"
 texrep 1 1
 numvert 8
 -0.2528134 0.5298097 -1.9373906
@@ -10256,7 +10256,7 @@ OBJECT poly
 name "Rwing-jury-strut-mid"
 loc 0.0000000 0.0000000 0.0000000
 crease 35.0
-texture "storch.rgb"
+texture "storch.png"
 texrep 1 1
 numvert 8
 -0.2514014 0.5298096 -1.9373903
@@ -10301,7 +10301,7 @@ OBJECT poly
 name "Rwing-jury-strut-rear"
 loc 0.0000000 0.0000000 0.0000000
 crease 35.0
-texture "storch.rgb"
+texture "storch.png"
 texrep 1 1
 numvert 8
 0.0790685 0.5298096 -1.9373903
@@ -15882,7 +15882,7 @@ OBJECT poly
 name "Rfork"
 loc 2.0876200 -0.5734610 -0.0342457
 crease 45.0
-texture "storch.rgb"
+texture "storch.png"
 texrep 1 1
 numvert 41
 -0.2214410 -1.0721800 -1.2682199
@@ -16172,7 +16172,7 @@ OBJECT poly
 name "Rstrut.lower"
 loc -0.1530550 -1.0543599 -0.2726750
 crease 45.0
-texture "storch.rgb"
+texture "storch.png"
 texrep 1 1
 numvert 22
 0.1111820 0.3606370 0.1148040
@@ -16393,7 +16393,7 @@ OBJECT poly
 name "Rstrut.upper"
 loc -0.0519230 -0.3576840 -0.0925032
 crease 45.0
-texture "storch.rgb"
+texture "storch.png"
 texrep 1 1
 numvert 22
 -0.0519230 -0.3576840 -0.0925034
@@ -16614,7 +16614,7 @@ OBJECT poly
 name "Rtail-strut"
 loc 8.1693554 1.2147882 -0.0000000
 crease 35.0
-texture "storch.rgb"
+texture "storch.png"
 texrep 1 1
 numvert 16
 0.0045905 0.0058591 -0.0293758
@@ -16695,7 +16695,7 @@ OBJECT poly
 name "Rudder"
 loc 8.3000002 0.9959940 0.0000000
 crease 45.0
-texture "storch.rgb"
+texture "storch.png"
 texrep 1 1
 numvert 67
 0.0198898 0.4578310 0.0302000
@@ -18310,7 +18310,7 @@ OBJECT poly
 name "Rwing-strut-front"
 loc 0.0000002 0.0000001 0.0000000
 crease 35.0
-texture "storch.rgb"
+texture "storch.png"
 texrep 1 1
 numvert 16
 0.0470367 -0.0000132 -0.3869743
@@ -18391,7 +18391,7 @@ OBJECT poly
 name "Rwing-strut-rear"
 loc 0.0000002 0.0000001 0.0000000
 crease 35.0
-texture "storch.rgb"
+texture "storch.png"
 texrep 1 1
 numvert 16
 0.0470367 -0.0000132 -0.3869743
@@ -21862,7 +21862,7 @@ OBJECT poly
 name "LHflap"
 loc 2.6866701 0.3329170 -0.9931920
 crease 45.0
-texture "storch.rgb"
+texture "storch.png"
 texrep 1 1
 numvert 140
 0.4777440 -0.0318348 2.5887599
@@ -22927,7 +22927,7 @@ OBJECT poly
 name "Lslat"
 loc 2.6866701 0.4291860 -2.4595900
 crease 45.0
-texture "storch.rgb"
+texture "storch.png"
 texrep 1 1
 numvert 345
 -0.9523980 -0.0644339 0.8925180
@@ -25627,7 +25627,7 @@ OBJECT poly
 name "Lwing"
 loc 2.6866701 0.4291860 -1.7527500
 crease 45.0
-texture "storch.rgb"
+texture "storch.png"
 texrep 1 1
 numvert 394
 0.0689120 -0.1599420 0.0547600
@@ -28823,7 +28823,7 @@ OBJECT poly
 name "LHaileron"
 loc 2.6866701 0.3329170 -0.9931920
 crease 45.0
-texture "storch.rgb"
+texture "storch.png"
 texrep 1 1
 numvert 182
 0.4083430 -0.0280148 2.6224501
@@ -30228,7 +30228,7 @@ OBJECT poly
 name "RHaileron"
 loc 2.1133299 0.3329170 -0.9931920
 crease 45.0
-texture "storch.rgb"
+texture "storch.png"
 texrep 1 1
 numvert 182
 1.6730100 -0.0280148 -5.0348902
@@ -31629,7 +31629,7 @@ OBJECT poly
 name "RHflap"
 loc 2.1133299 0.3329170 -0.9931920
 crease 45.0
-texture "storch.rgb"
+texture "storch.png"
 texrep 1 1
 numvert 140
 1.7424099 -0.0318350 -5.0012002
@@ -32694,7 +32694,7 @@ OBJECT poly
 name "Rslat"
 loc 2.1133299 0.4291860 -2.4595900
 crease 45.0
-texture "storch.rgb"
+texture "storch.png"
 texrep 1 1
 numvert 345
 0.3122670 -0.0644339 -0.3721480
@@ -35394,7 +35394,7 @@ OBJECT poly
 name "Rwing"
 loc 2.1133299 0.4291860 -1.7527500
 crease 45.0
-texture "storch.rgb"
+texture "storch.png"
 texrep 1 1
 numvert 395
 1.6535800 -0.0539107 -1.1193100

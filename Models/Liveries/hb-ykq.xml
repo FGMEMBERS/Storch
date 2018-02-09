@@ -5,7 +5,7 @@
   <model>
    <livery>
     <name type="string">HB-YKQ</name>
-    <texture>Liveries/hb-ykq.rgb</texture>
+    <texture>Liveries/hb-ykq.png</texture>
    </livery>
   </model>
  </sim>
